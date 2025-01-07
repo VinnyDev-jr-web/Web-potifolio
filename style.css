@@ -296,4 +296,103 @@ footer .line-footer p a{
     text-decoration: none;
 }
 
+/* Estilos responsivos */
+@media (max-width: 1024px) {
+    .interface {
+        padding: 0 2%;
+    }
+    header > .interface {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    header nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .texto-site p {
+        padding-right: 10vh;
+    }
+    .img-site {
+        padding-right: 0;
+        padding-top: 10vh;
+    }
+    .flex {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .especialidades-box {
+        margin: 20px auto;
+        max-width: 90%;
+    }
+    section.sobre-mim .flex {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .texto-sobre {
+        padding: 0;
+    }
+}
 
+@media (max-width: 768px) {
+    header > .interface {
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .texto-site h3, .texto-site h2 {
+        font-size: 4vh;
+    }
+    .texto-site p {
+        font-size: 14px;
+        padding-right: 5vh;
+    }
+    .img-portifolio {
+        width: 100%;
+        height: 300px;
+    }
+    .botoes-sobre button {
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header > .interface {
+        align-items: center;
+        text-align: center;
+    }
+    .texto-site {
+        padding-top: 10vh;
+        text-align: center;
+    }
+    .texto-site p {
+        padding-right: 0;
+    }
+    .img-site {
+        padding-top: 5vh;
+    }
+    .especialidades-box h3 {
+        font-size: 30px;
+    }
+    .especialidades-box p {
+        font-size: 14px;
+    }
+    .titulo {
+        font-size: 30px;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+    .botoes-sobre button {
+        margin: 5px;
+    }
+    .img-portifolio {
+        height: 200px;
+    }
+}
