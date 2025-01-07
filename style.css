@@ -142,8 +142,6 @@ img{
     font-family: "Kanit", serif;
     font-weight: 700;
     font-style: normal
-    font-size: 10px;
-    line-height: 40px;
 }
 .texto-sobre h3 spam{
     font-size: 45px;
@@ -296,4 +294,54 @@ footer .line-footer p a{
     text-decoration: none;
 }
 
+/* RESPONSIVIDADE */
 
+@media screen and (max-width: 1020px) {
+
+    /* CONFIG GERAL */
+    .flex{
+        display: block;
+    }
+    /* CABEÇALHO */
+    .menu{
+        display:none;
+    }
+    /* INICIO */
+    .texto-site{
+        margin-top: 5vh;
+        padding: 20vh 0;
+    }
+    .texto-site p{
+        font-size: 3vh;
+        margin-top: 6vh;
+        padding: 10vh 0;
+    }
+    .img-site{
+        padding: 2vh 0;
+        margin-bottom: 20vh
+    }
+    /* ESPECIALIDADES */
+    .especialidades-box p{
+        padding: 2vh 0;
+        text-align: center;
+    }
+    /* SOBRE */
+    .texto-sobre p{
+        text-align: left;
+        font-size: 3vh;
+        margin-top: 5vh;
+        padding: 3vh 0;
+    }
+    .botoes-sobre{
+        font-size: 4vh;
+        display: flex;
+        margin: 5vh 5vh;
+        width: 4vh;
+        height: 4vh;
+    }
+    /* PORTIFOLIO */
+    .img-portifolio{
+        width: 45vh;
+        height: 35vh;
+    }
+}
