@@ -332,11 +332,12 @@ footer .line-footer p a{
     }
     .texto-sobre p{
         align-items: center;
-        text-align: center;
+        text-align: left;
         padding-bottom: 5vh;
-        font-size: 3vh;
+        font-size: 2vh;
+        line-height: 3vh;
         justify-content:space-between;
-        padding: 15vh 0;
+        padding: 5vh 3vh;
     }
     .botoes-sobre{
         align-items: center;
