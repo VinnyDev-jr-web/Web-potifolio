@@ -1,0 +1,299 @@
+/* ESTILO GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Kanit", serif;
+    font-weight: 400;
+    font-style:normal;
+}
+body{
+    background-color: #111;
+    height: 100vh;
+}
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+}
+h2.titulo{
+    color: whitesmoke;
+    font-size: 40px;
+    text-align: center;
+}
+
+/* ESTILO DO CABEÇALHO */
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+header a{
+    color: #8a2be2;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.2s;
+}
+header a:hover{
+    color:rgb(215, 201, 228);
+    transform: scale(1.2);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 10px;
+}
+/* ESTILO TOPO DO SITE */
+.texto-site{
+    padding-top: 15vh;
+    color: whitesmoke;
+}
+spam{
+    color: #8a2be2;
+}
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+.img-site{
+    animation: float 3s ease-in-out infinite alternate;
+    padding-right: 20vh;
+    padding-top: 15vh;
+}
+div h3{
+    font-size: 6vh;
+}
+div h2{
+    font-size: 5vh;
+}
+div p{
+    padding-top: 3vh;
+    padding-right: 30vh;
+    font-size: 15px;
+}
+/* ESTILO DAS EXPECIALIDADES */
+section.especialidades{
+    padding: 40px 4%;
+    text-align: center;
+}
+
+section.especialidades .flex{
+    gap: 60px;
+}
+.especialidades-box{
+    color: whitesmoke;
+    padding: 20px;
+    border: 2px solid #8a2be2;
+    margin-top: 50px;
+    border-radius: 40px;
+    transition: 0.5s;
+}
+.especialidades-box:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #ffffff70;
+}
+.especialidades-box i{
+    font-size: 75px;
+    color: #8a2be2;
+}
+.especialidades-box h3{
+    font-size: 40px;
+    margin: 15px 0;
+    font-family: "Kanit", serif;
+    font-weight: 700;
+    font-style: normal
+}
+.especialidades-box p{
+    text-align: justify;
+    font-size: 15px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+}
+/* ESTILO DO SOBRE MIM */
+section.sobre-mim{
+    padding: 40px 4%;
+}
+section.sobre-mim .flex{
+    align-items: center;
+    gap: 50px;
+}
+img{
+    border-radius: 40px;
+}
+.texto-sobre{
+    padding: 0 40px;
+    color: whitesmoke;
+}
+.texto-sobre h3{
+    font-family: "Kanit", serif;
+    font-weight: 700;
+    font-style: normal
+    font-size: 10px;
+    line-height: 40px;
+}
+.texto-sobre h3 spam{
+    font-size: 45px;
+    display:block;
+    font-family: "Kanit", serif;
+    font-weight: 700;
+    font-style: normal
+}
+.texto-sobre p{
+    text-align: justify;
+    margin: 5px 0;
+}
+.texto-sobre .botoes-sobre button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin: 5px 5px;
+    background-color: #8a2be2;
+    cursor:pointer;
+    font-size: 25px;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+.texto-sobre .botoes-sobre button:hover{
+    transform: scale(1.2);
+}
+/* ESTILO PORTIFOLIO */
+section.portifolio{
+    padding: 80px 4%;
+}
+section.portifolio .flex{
+    justify-content: space-around;
+    margin-top: 40px;
+}
+.img-portifolio{
+    border-radius: 40px;
+    cursor: pointer;
+    width: 560px;
+    height: 460px;
+    background-color: #8a2be2;
+    background-size:cover;
+    background-position: 100% 0%;
+    transition: 2s;
+    position: relative;
+}
+.img-portifolio:hover{
+    background-position: 0% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.534);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s;
+}
+.overlay:hover{
+    opacity: 1;
+}
+.overlay a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight:600;
+}
+/* ESTILO FORMULARIO DE CONTATO */
+section.formulario{
+    padding: 80px 4%;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: rgb(56, 56, 56);
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    color: whitesmoke;
+    font-size: 15px;
+}
+form textarea{
+    max-height: 150px;
+    resize: none;
+}
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+form .btn-enviar input{
+    cursor: pointer;
+    width: 130px;
+    background-color: #8a2be2;
+    font-size: 30px;
+    transition: 1s;
+}
+form .btn-enviar input:hover{
+    transform: scale(1.2);
+    background-color: #b380e4
+}
+/* ESTILO RODAPÉ */
+footer{
+    padding: 50px 4%;
+    box-shadow: 0 0 20px 10px #ffffff1d;
+}
+footer .flex{
+    justify-content: space-between;
+}
+footer .logo-footer{
+    color: whitesmoke;
+    font-size: 15px;
+}
+footer .line-footer{
+    padding: 20px 0;
+}
+.borda{
+    border-top: 2px solid #8a2be2;
+}
+.botoes-sobre button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    margin: 5px 5px;
+    background-color: #8a2be2;
+    cursor:pointer;
+    font-size: 25px;
+    border-radius: 50%;
+}
+footer .line-footer p i{
+    color:#8a2be2;
+    font-size: 22px;
+}
+footer .line-footer p a{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+
