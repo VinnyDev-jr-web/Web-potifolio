@@ -293,3 +293,62 @@ footer .line-footer p a{
     color: whitesmoke;
     text-decoration: none;
 }
+
+@media  screen and (max-width: 1020px) {
+    /* GERAL */
+    .flex{
+        flex-direction: column-reverse;
+    }
+
+    /* CABEÇALHO */
+    .menu{
+        display: none;
+    }
+    /* INICIO */
+    .topo-do-site{
+        text-align: center;
+    }
+    .img-site{
+        padding-left: 4vh;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .texto-site p{
+        font-size: 2vh;
+        justify-content:space-between;
+        padding: 10vh 0;
+    }
+    /* ESPECIALIDADES */
+    .especialidades p{
+        align-items: center;
+        text-align: center;
+        padding-left: 4vh;
+    }
+    /* SOBRE */
+    .sobre-mim{
+        align-items: center;
+        text-align: center;
+    }
+    .texto-sobre p{
+        align-items: center;
+        text-align: center;
+        padding-bottom: 5vh;
+        font-size: 3vh;
+        justify-content:space-between;
+        padding: 15vh 0;
+    }
+    .botoes-sobre{
+        align-items: center;
+        text-align: center;
+    }
+    /* PORTIFOLIO */
+    .portifolio{
+        align-items: center;
+        text-align: center;
+    }
+    .img-portifolio{
+        width: 43vh;
+        height: 35vh;
+    }
+}
