@@ -176,7 +176,7 @@ section.portifolio .flex{
     justify-content: space-around;
     margin-top: 40px;
 }
-.img-portifolio{
+.img-linktree{
     border-radius: 40px;
     cursor: pointer;
     width: 560px;
@@ -187,7 +187,21 @@ section.portifolio .flex{
     transition: 2s;
     position: relative;
 }
-.img-portifolio:hover{
+.img-linkedin-site{
+    border-radius: 40px;
+    cursor: pointer;
+    width: 560px;
+    height: 460px;
+    background-color: #8a2be2;
+    background-size:cover;
+    background-position: 100% 0%;
+    transition: 2s;
+    position: relative;
+}
+.img-linktree:hover{
+    background-position: 0% 100%;
+}
+.img-linkedin-site:hover{
     background-position: 0% 100%;
 }
 
@@ -348,7 +362,11 @@ footer .line-footer p a{
         align-items: center;
         text-align: center;
     }
-    .img-portifolio{
+    .img-linktree{
+        width: 43vh;
+        height: 35vh;
+    }
+    .img-linkedin-site{
         width: 43vh;
         height: 35vh;
     }
