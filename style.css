@@ -198,10 +198,24 @@ section.portifolio .flex{
     transition: 2s;
     position: relative;
 }
+.img-site-promocional{
+    border-radius: 40px;
+    cursor: pointer;
+    width: 560px;
+    height: 460px;
+    background-color: #8a2be2;
+    background-size:cover;
+    background-position: 100% 0%;
+    transition: 2s;
+    position: relative;
+}
 .img-linktree:hover{
     background-position: 0% 100%;
 }
 .img-linkedin-site:hover{
+    background-position: 0% 100%;
+}
+.img-site-promocional:hover{
     background-position: 0% 100%;
 }
 
