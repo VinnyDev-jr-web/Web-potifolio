@@ -72,6 +72,16 @@ header nav ul li{
     display: inline-block;
     padding: 0 10px;
 }
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+}
 /* ESTILO TOPO DO SITE */
 .texto-site{
     padding-top: 15vh;
@@ -321,8 +331,49 @@ footer .line-footer p a{
     }
 
     /* CABEÇALHO */
-    .menu{
+    .logo{
         display: none;
+    }
+    .mobile-menu{
+        z-index: 2;
+        padding-bottom: 35px;
+        padding-left: 40vh;
+        display: block;
+    }
+    .menu{
+        z-index: 1;
+        position: absolute;
+        top: 5vh;
+        right: 2vh;
+        width: 40vw;
+        height: 110vh;
+        margin-top: -56px;
+        background-color: #111;
+        transition: 0.5s;
+        transform: translateX(110%);
+    }
+    .menu.ativar{
+        transform: translateX(0);
+    }
+    .menu a{
+        font-size: 20px;
+        padding-top: 15vh;
+        color: #8a2be2;
+    }
+    header.rolagem{
+        right: -3vh;
+        left: -5vh;
+        padding: 25px auto;
+        margin-bottom: 5px;
+        background-color: #11111100;
+    }
+    header.rolagem .menu{
+        background-color: #111;
+        width: 70vw;
+        right: 3vw;
+    }
+    header.rolagem .menu a{
+        color: #8a2be2;
     }
     /* INICIO */
     .topo-do-site{
